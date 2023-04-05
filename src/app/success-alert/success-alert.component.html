@@ -1,0 +1,17 @@
+<!-- <p>success-alert works!</p>
+<input [(ngModel)]="serverName" />
+<button (click)="ShowServer()">Show my Server</button> -->
+<!-- <h1>{{serverName}}</h1>
+<button 
+[disabled]="serverName === ''"
+(click)="serverName=''">Next</button>
+<h2 *ngIf="serverName===''">{{serverInfo}}</h2> -->
+<ng-template [ngIf]="lessons" [ngIfElse]="loading">
+    <div class="lessons-list">
+      ... 
+    </div>
+ </ng-template>
+  
+  <ng-template #loading>
+      <div>Loading...</div>
+  </ng-template

@@ -1,0 +1,11 @@
+<!-- <p>warning-alert works!</p> -->
+<head></head>
+<body>
+<h2 *ngIf="!display">This is a div which toggle</h2>
+<button (click)="print()">Display Details</button>
+<!-- <button (click)="printNon()">Do'nt Display</button> -->
+<!-- <p [hidden]="display">Hello Mickel!</p> -->
+<div>
+    <div *ngFor="let count of buttonClick" [ngClass]="{online : count%5===0}">No of times button pressed:{{count}}</div>
+</div>
+</body>
